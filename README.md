@@ -3,7 +3,7 @@
 A reference architecture for building a multi-region operational dispatch
 system in n8n, with email triggers, AI-assisted parsing, modular
 sub-workflows per region, human-in-the-loop approval gates, asynchronous
-DocuSign signing, scheduled reminders, and daily Slack summaries — all
+DocuSign signing, scheduled reminders, and daily Slack summaries, all
 across Microsoft 365, DocuSign, ClickSend, Slack, and Azure OpenAI.
 
 This repository documents the architecture decisions, code patterns, and
@@ -25,7 +25,7 @@ regional offices. Each booking has its own downstream consequences:
 
 - Folder creation in SharePoint, partitioned by region and service type
 - Tracking row in Excel for operations dashboards
-- Signed liability certificate via DocuSign (asynchronous — customer
+- Signed liability certificate via DocuSign (asynchronous, customer
   signs hours or days later)
 - Confirmation SMS to the customer
 - Day-before preparation SMS (scheduled)
